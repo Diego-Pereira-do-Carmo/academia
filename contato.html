@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/contato.css">
+    <title>PD DEMOLIDOR</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-content">
+            <h1 class="logo">PERNAMBUCO<br> DEMOLIDOR</h1>
+
+            <nav class="header-menu">
+                <ul class="list-itens">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="horarios.html">HORÁRIOS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a href="https://www.instagram.com/pernambucodemolidor/"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
+                <input type="hidden" name="accessKey" value="52272a18-3d63-4bf9-9d8f-e0f84de09fa6">
+                <input type="hidden" name="redirectTo" value="https://www.instagram.com/pernambucodemolidor/">
+                <label for="inputNome">Primeiro Nome</label>
+                <input type="text" id="inputNome" name="name" required maxlength="25" minlength="2">
+                <span></span>
+
+                <label for="inputEmail">Endereço de Email</label>
+                <input type="email" id="inputEmail" name="email" required maxlength="50">
+                <span></span>
+
+                <label for="textAreaMensagem">Mesnsagem</label>
+                <textarea name="message" id="textAreaMensagem" required maxlength="350"></textarea>
+                <span></span>
+
+                <div id="container">
+                    <div id="button">
+                        <button>Enviar Mensagem</button>
+                    </div>
+                    <div id="whats">
+                        <a href="https://wa.me/5511967496204">
+                            <img src="./img/square-whatsapp-brands.svg" alt="whatsapp" width="60rem">
+                            <div id="text">Entre em Contato</div>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>

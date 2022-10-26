@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* zerando o CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+/* Estilizando o fundo da tela */
+
+html {
+    font-size: 62.5%;
+    color: #32cd32;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 200vh;
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+
+
+/* menu - header - nav */
+
+header {
+    width: 100%;
+    height: 7vh;
+    background: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    color: #32cd32;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: #32cd32;
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+
+}
+
+main {
+    width: 100vw;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardUp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65rem;
+}
+
+#cardDown {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    margin-left: 2rem;
+
+}
+
+.card {
+    width: 34rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 4rem;
+}
+
+.card h3 {
+    margin-top: 1.5rem;
+}
+
+.card p {
+    margin-top: 2rem;
+    color: #FFF;
+}
+
+@media screen and (max-width:640px) {
+    body {
+        height: 600vh;
+    }
+
+    /* centralizando o logo na tela */
+    .logo {
+        text-align: center;
+    }
+
+
+    /* colocando a nav abaixo do menu com display:block */
+    .menu-content {
+        display: block;
+    }
+
+    .menu-content .list-itens {
+        gap: 0;
+        font-size: 1.5rem;
+    }
+
+    /* alinhando o menu */
+    .header-menu {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    main{
+        width: 100vw;
+        height: 500vh;
+    }
+
+
+    #info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction:column;
+    }
+
+    #cardUp {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50rem;
+    }
+
+    #cardDown {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 7rem;
+    }
+
+    img{
+        border-radius: 1rem;
+    }
+
+
+
+}

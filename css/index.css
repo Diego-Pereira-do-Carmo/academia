@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* zerando o CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o fundo da tela */
+
+html{
+    width: 100vw;
+    height: 100vh;    
+    font-size: 62.5%;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(../img/know2.PNG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* menu - header - nav */
+
+header{
+    width: 100%;
+    height: 7vh;
+    background: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo{
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    color: #32cd32;
+}
+
+.menu-content .list-itens{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu-content .list-itens a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: #32cd32;
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before{
+    width: 100%;
+
+}
+
+/* Conteudo Principal + botões */
+
+main {
+    width: 100vw;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+/* texto conteudo principal */
+
+.primary-text{
+    
+    font-size: 4rem;
+    margin: 3rem;
+}
+
+.second-text{
+    margin-bottom: 7rem;
+    font-size: 3rem;
+   text-transform: uppercase;
+}
+
+/* botões */
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.btns .agende{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 15rem;
+    height: 5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #32cd32;
+    color: #32cd32;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 2rem;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns .agende:before{
+    content: ' ';
+    border-radius: 2rem;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 5rem;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns .agende:hover:before{
+    width: 100%;
+
+}
+
+
+@media screen and (max-width:640px){
+    /* centralizando o logo na tela */
+    .logo{
+        text-align: center;
+    }
+
+
+    /* colocando a nav abaixo do menu com display:block */
+    .menu-content{
+        display: block;
+    }
+
+    .menu-content .list-itens{
+        gap: 0;
+        font-size: 1.5rem;
+    }
+
+    /* alinhando o menu */
+    .header-menu{
+        display: flex;
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+
+    /* redefinindo tamanho de fontes */
+    .primary-text{
+        font-size: 2rem;    
+    }
+
+    .second-text{
+        font-size: 1.5rem;   
+    }   
+    
+}
+
+
+
